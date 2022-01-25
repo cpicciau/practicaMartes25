@@ -1,4 +1,11 @@
 /* CSS LAYOUT */
 /* **************************************************************** */
 
+.zig_zag {
+    display:flex;
+}
+
+.row_reverse{
+    flex-direction: row-reverse;
+}
 
