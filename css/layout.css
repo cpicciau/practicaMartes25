@@ -1,11 +1,78 @@
 /* CSS LAYOUT */
 /* **************************************************************** */
 
+/* APLICAMOS FLEX A BODY PARA QUE TODO SU CONTENIDO SE QUEDE EN EL CENTRO */
+.body {
+    display: flex;
+    justify-content: center;
+}
+
+/* AJUSTAR TAMAÑO DE LAS DOS SECCIONES */
+.variosZigzag {
+    width: 70%;
+    display:flex;
+    flex-direction: column;
+}
+
+/* SECTION PARA ZIG ZAG  */
 .zig_zag {
     display:flex;
 }
 
-.row_reverse{
+/* UTILIZAR ESTE CLASE AL TRABAJAR CON FLEX */
+.izquierda{
     flex-direction: row-reverse;
 }
 
+/* GALERÍA DE FOTOS */
+.galeria {
+    width: 90vh;
+    display: flex;
+    /* PARA CONSTRUIR GALERÍAS (PARA QUE LAS IMÁGENES SE VAYAN YENDO HACIA ABAJO -- FLEX TRABAJA EN LÍNEA) */
+    flex-wrap: wrap;
+}
+
+/* NEWSLETTER */
+.news {
+    width: 100vh;
+    padding: 50px 0;
+    background-color: rgb(171, 171, 171);
+    /* PARA JUSTIFICARLO DE MANERA VERTICAL */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter {
+    display: flex;
+    background-color: #fff;
+}
+
+/* MULTI (figure + figcaption == img + p) */
+.multi {
+    border-radius: 10px;
+    border: 1px solid red;
+    display:flex;
+}
+
+/* CONTENEDOR */
+.container {
+   max-width: 1366px;
+   padding: 0 20px;
+   background-color: #f2f2f2;
+   font-size: 1.125rem;
+   font-family: sans-serif;
+   color: #333;
+}
+
+/* APLICAR SEPARACIÓN ENTRE SECTION */
+section {
+    margin-bottom: 20px;
+}
+
+/* APLICAR SEPARACIÓN ENTRE IMAGENES */
+img {
+   /* margin: 10px; no usar con flex*/
+   padding: 10px;
+   width: 30%;
+}
